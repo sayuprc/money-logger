@@ -13,7 +13,7 @@ use Illuminate\Support\Str;
 class SignUpController extends Controller
 {
     /**
-     * 登録画面表示
+     * Display a sign up screen
      *
      * @return \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory
      */
@@ -23,7 +23,7 @@ class SignUpController extends Controller
     }
 
     /**
-     * 登録処理
+     * The function about save user data based on data from the form
      *
      * @param Request $request
      *

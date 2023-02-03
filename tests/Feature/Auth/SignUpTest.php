@@ -12,7 +12,7 @@ class SignUpTest extends TestCase
     use RefreshDatabase;
 
     /**
-     * ユーザー登録画面表示テスト
+     * Test that display user sign up screen
      *
      * @return void
      */
@@ -24,7 +24,7 @@ class SignUpTest extends TestCase
     }
 
     /**
-     * ユーザー登録処理テスト
+     * Test that save user
      *
      * @return void
      */
