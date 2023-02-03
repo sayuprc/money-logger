@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\SignUpController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,6 @@ Route::get('/', function () {
 Route::get('/sign-up', [SignUpController::class, 'index']);
 
 Route::post('/sign-up', [SignUpController::class, 'handle']);
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'handle']);

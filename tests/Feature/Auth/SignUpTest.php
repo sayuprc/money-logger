@@ -18,6 +18,8 @@ class SignUpTest extends TestCase
      */
     public function testShowSignUp(): void
     {
+        $this->withoutVite();
+
         $response = $this->get('/sign-up');
 
         $response->assertStatus(200);
@@ -30,6 +32,8 @@ class SignUpTest extends TestCase
      */
     public function testSignUp(): void
     {
+        $this->withoutVite();
+
         $response = $this->post(
             '/sign-up',
             [
